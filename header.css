@@ -1,0 +1,146 @@
+.header {
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: white;
+  border-bottom: 1px rgb(228, 228, 228);
+  border-bottom-style: solid;
+  z-index: 100;
+}
+.l-sec {
+display: flex;
+align-items: center;
+
+}
+.r-sec {
+width: 200px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-shrink: 0;
+
+}
+.m-sec {
+  flex: 1;
+  margin-left: 90px;
+  margin-right: 35px;
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+}
+.sh-button {
+  height: 40px;
+  width: 66px;
+  border-color: rgb(192, 192, 192);
+  border-style: solid;
+  border-width: 1px;
+  margin-left: -1px;
+  margin-right: 10px;
+  border-top-right-radius: 24px;
+  border-bottom-right-radius: 24px;
+  
+}
+
+.sh-button, .sp-button, .up-cont, .yt-apps-cont, .notification-cont{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  cursor: pointer;
+}
+.sp-button {
+  height: 40px;
+  width: 40px;
+  border: none;
+  border-radius: 100px;
+  background-color: rgb(245, 245, 245);
+}
+.hmenu {
+  width: 24px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+.ylogo {
+  width: 110px;
+}
+.search-bar {
+  flex: 1;
+  height: 36px;
+  border: 1px solid rgb(192, 192, 192);
+  border-top-left-radius: 24px;
+  border-bottom-left-radius: 24px;
+  box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.05);
+  padding-left: 13px;
+}
+.search-bar::placeholder {
+  font-family: Roboto, Arial;
+  font-size: 18px;
+}
+
+
+.search-bar:focus{
+  outline: none;
+  
+}
+.sh-icon {
+  height: 25px;
+  
+}
+.sp-icon {
+  height: 25px;
+  
+}
+.up-icon {
+  height: 24px;
+}
+.yt-apps {
+  height: 24px;
+}
+.not-icon {
+  height: 24px;
+}
+.cur-p-pic {
+  height: 32px;
+  border-radius: 100px;
+  margin-right: 20px;
+}
+body {
+  margin: 0;
+  padding-top: 80px;
+}
+.notification-cont {
+  position: relative;
+}
+.not-count {
+  position: absolute;
+  background-color: rgb(200, 0, 0);
+  border-radius: 100px;
+  right: -7px;
+  top: -2px;
+  font-family: Roboto, Arial;
+  font-size: 12px;
+  padding: 2px 6px;
+  color: white;
+}
+.s-t-tip {
+  position: absolute;
+  background-color: gray;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 2px;
+  bottom: -30px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+  font-family: Roboto, Arial;
+  font-size: 13px;
+}
+.sh-button:hover .s-t-tip, .sp-button:hover .s-t-tip, .up-cont:hover .s-t-tip, .yt-apps-cont:hover .s-t-tip, .notification-cont:hover .s-t-tip  {
+  opacity: 1;
+  
+}
